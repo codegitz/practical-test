@@ -116,23 +116,21 @@ CSV-only input/output
 
 ## Future Improvements <a name="future-improvements"></a>
 ### Immediate Priorities
-Performance
+#### Performance
 
 Add Redis caching for product data
 
 Implement Spring Batch for distributed processing
 
-Resilience
+#### Resilience
 
 Circuit breakers for bulk operations
 
 Retry mechanisms for transient failures
 
-Observability
+#### Observability
 
 Prometheus metrics endpoint
 
 Request tracing with OpenTelemetry
-
-API Enhancements
 

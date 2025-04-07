@@ -1,4 +1,3 @@
 package io.codegitz.exception;
 
-public record ErrorResponse() {
-}
+public record ErrorResponse(String code, String message, String details) {}

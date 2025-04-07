@@ -1,5 +1,8 @@
-package io.codegitz.exception;
+package io.codegitz.exception.handler;
 
+import io.codegitz.exception.CsvProcessingException;
+import io.codegitz.exception.ErrorResponse;
+import io.codegitz.exception.InvalidDataException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -62,7 +65,4 @@ public class GlobalExceptionHandler {
         logger.error("Unexpected error: {}", ex.getMessage(), ex);
         return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
     }
-
-    // Error response DTO
-    record ErrorResponse(String code, String message, String details) {}
 }
